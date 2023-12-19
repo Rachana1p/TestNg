@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="4" failed="1" skipped="5">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-19T14:21:36 IST" name="Default suite" finished-at="2023-12-19T14:21:45 IST" duration-ms="8715">
+    <groups>
+      <group name="FireFoxOnly">
+        <method signature="BrowserBasedGroupTest.launchFireFoxTest()[pri:0, instance:group.BrowserBasedGroupTest@21282ed8]" name="launchFireFoxTest" class="group.BrowserBasedGroupTest"/>
+        <method signature="BrowserBasedGroupTest.testFaceBookHomePage()[pri:1, instance:group.BrowserBasedGroupTest@21282ed8]" name="testFaceBookHomePage" class="group.BrowserBasedGroupTest"/>
+        <method signature="BrowserBasedGroupTest.testFailureLogin()[pri:2, instance:group.BrowserBasedGroupTest@21282ed8]" name="testFailureLogin" class="group.BrowserBasedGroupTest"/>
+      </group> <!-- FireFoxOnly -->
+      <group name="ChromeOnly">
+        <method signature="BrowserBasedGroupTest.launchChrome()[pri:0, instance:group.BrowserBasedGroupTest@21282ed8]" name="launchChrome" class="group.BrowserBasedGroupTest"/>
+        <method signature="BrowserBasedGroupTest.testHomePageTitle()[pri:1, instance:group.BrowserBasedGroupTest@21282ed8]" name="testHomePageTitle" class="group.BrowserBasedGroupTest"/>
+        <method signature="BrowserBasedGroupTest.testHomePageSourceUrl()[pri:2, instance:group.BrowserBasedGroupTest@21282ed8]" name="testHomePageSourceUrl" class="group.BrowserBasedGroupTest"/>
+        <method signature="BrowserBasedGroupTest.testAmazonHomePageTitle2()[pri:3, instance:group.BrowserBasedGroupTest@21282ed8]" name="testAmazonHomePageTitle2" class="group.BrowserBasedGroupTest"/>
+        <method signature="BrowserBasedGroupTest.testSearch1()[pri:4, instance:group.BrowserBasedGroupTest@21282ed8]" name="testSearch1" class="group.BrowserBasedGroupTest"/>
+      </group> <!-- ChromeOnly -->
+    </groups>
+    <test started-at="2023-12-19T14:21:36 IST" name="Default test" finished-at="2023-12-19T14:21:45 IST" duration-ms="8715">
+      <class name="group.BrowserBasedGroupTest">
+        <test-method signature="launchChrome()[pri:0, instance:group.BrowserBasedGroupTest@21282ed8]" started-at="2023-12-19T14:21:36 IST" name="launchChrome" finished-at="2023-12-19T14:21:36 IST" duration-ms="80" status="FAIL">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[chromedriver located at drivers/windows/chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at drivers/windows/chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:100)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at group.BrowserBasedGroupTest.launchChrome(BrowserBasedGroupTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchChrome -->
+        <test-method signature="launchFireFoxTest()[pri:0, instance:group.BrowserBasedGroupTest@21282ed8]" started-at="2023-12-19T14:21:36 IST" name="launchFireFoxTest" finished-at="2023-12-19T14:21:41 IST" duration-ms="4649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchFireFoxTest -->
+        <test-method signature="testFaceBookHomePage()[pri:1, instance:group.BrowserBasedGroupTest@21282ed8]" started-at="2023-12-19T14:21:41 IST" name="testFaceBookHomePage" finished-at="2023-12-19T14:21:41 IST" depends-on-methods="group.BrowserBasedGroupTest.launchFireFoxTest" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFaceBookHomePage -->
+        <test-method signature="testHomePageTitle()[pri:1, instance:group.BrowserBasedGroupTest@21282ed8]" started-at="2023-12-19T14:21:41 IST" name="testHomePageTitle" description="Test Amazon Home Page Title Match" finished-at="2023-12-19T14:21:41 IST" depends-on-methods="group.BrowserBasedGroupTest.launchChrome" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method group.BrowserBasedGroupTest.testHomePageTitle() on instance group.BrowserBasedGroupTest@21282ed8 depends on not successfully finished methods 
+[group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@21282ed8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method group.BrowserBasedGroupTest.testHomePageTitle() on instance group.BrowserBasedGroupTest@21282ed8 depends on not successfully finished methods 
+[group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@21282ed8]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePageTitle -->
+        <test-method signature="testFailureLogin()[pri:2, instance:group.BrowserBasedGroupTest@21282ed8]" started-at="2023-12-19T14:21:41 IST" name="testFailureLogin" finished-at="2023-12-19T14:21:44 IST" depends-on-methods="group.BrowserBasedGroupTest.launchFireFoxTest" duration-ms="2879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFailureLogin -->
+        <test-method signature="closeFireFox()[pri:0, instance:group.BrowserBasedGroupTest@21282ed8]" started-at="2023-12-19T14:21:44 IST" name="closeFireFox" depends-on-groups="FireFoxOnly" finished-at="2023-12-19T14:21:45 IST" duration-ms="1013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeFireFox -->
+        <test-method signature="testHomePageSourceUrl()[pri:2, instance:group.BrowserBasedGroupTest@21282ed8]" started-at="2023-12-19T14:21:45 IST" name="testHomePageSourceUrl" description="Test Amazon Home Page Source Url" finished-at="2023-12-19T14:21:45 IST" depends-on-methods="group.BrowserBasedGroupTest.launchChrome" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method group.BrowserBasedGroupTest.testHomePageSourceUrl() on instance group.BrowserBasedGroupTest@21282ed8 depends on not successfully finished methods 
+[group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@21282ed8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method group.BrowserBasedGroupTest.testHomePageSourceUrl() on instance group.BrowserBasedGroupTest@21282ed8 depends on not successfully finished methods 
+[group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@21282ed8]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePageSourceUrl -->
+        <test-method signature="testAmazonHomePageTitle2()[pri:3, instance:group.BrowserBasedGroupTest@21282ed8]" started-at="2023-12-19T14:21:45 IST" name="testAmazonHomePageTitle2" description="Test Amazon Home Page Title Invalid Match" finished-at="2023-12-19T14:21:45 IST" depends-on-methods="group.BrowserBasedGroupTest.launchChrome" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method group.BrowserBasedGroupTest.testAmazonHomePageTitle2() on instance group.BrowserBasedGroupTest@21282ed8 depends on not successfully finished methods 
+[group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@21282ed8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method group.BrowserBasedGroupTest.testAmazonHomePageTitle2() on instance group.BrowserBasedGroupTest@21282ed8 depends on not successfully finished methods 
+[group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@21282ed8]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonHomePageTitle2 -->
+        <test-method signature="testSearch1()[pri:4, instance:group.BrowserBasedGroupTest@21282ed8]" started-at="2023-12-19T14:21:45 IST" name="testSearch1" description="Search Iphone 15 pro max" finished-at="2023-12-19T14:21:45 IST" depends-on-methods="group.BrowserBasedGroupTest.launchChrome" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method group.BrowserBasedGroupTest.testSearch1() on instance group.BrowserBasedGroupTest@21282ed8 depends on not successfully finished methods 
+[group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@21282ed8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method group.BrowserBasedGroupTest.testSearch1() on instance group.BrowserBasedGroupTest@21282ed8 depends on not successfully finished methods 
+[group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@21282ed8]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch1 -->
+        <test-method signature="closeChrome()[pri:0, instance:group.BrowserBasedGroupTest@21282ed8]" started-at="2023-12-19T14:21:45 IST" name="closeChrome" depends-on-groups="ChromeOnly" finished-at="2023-12-19T14:21:45 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BrowserBasedGroupTest.closeChrome()[pri:0, instance:group.BrowserBasedGroupTest@21282ed8] depends on not successfully finished methods in group "ChromeOnly"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BrowserBasedGroupTest.closeChrome()[pri:0, instance:group.BrowserBasedGroupTest@21282ed8] depends on not successfully finished methods in group "ChromeOnly"
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeChrome -->
+      </class> <!-- group.BrowserBasedGroupTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
