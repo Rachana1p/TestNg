@@ -1,10 +1,11 @@
-package amazon;
+ package amazon;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -25,11 +26,12 @@ public class AmazonHomePageTest {
 	@BeforeMethod
 	public void setUp() {
 
-		// step2: set system properties for selenium dirver
-		System.setProperty("webdriver.geckodriver.driver", driverPath);
+		// set headless driver option : run test in the background
+				FirefoxOptions options = new FirefoxOptions();
+				options.addArguments("--headless");
 
-		// step3: instantiate selenium webdriver
-		driver = new FirefoxDriver();
+				// step3: instantiate selenium webdriver
+				driver = new FirefoxDriver(options);
 
 		// step4: launch browser
 		driver.get(siteUrl);
