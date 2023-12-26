@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -36,8 +37,13 @@ public class BrowserBasedGroupTest {
 			// step2: set system properties for selenium dirver
 			System.setProperty("webdriver.chrome.driver", chromePath);
 
+			// set headless driver option : run test in the background
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+
 			// step3: instantiate selenium webdriver
-			driverOne = new ChromeDriver();
+			driverOne = new ChromeDriver(options);
+
 
 			// step4: launch browser
 			driverOne.get(amazonUrl);
