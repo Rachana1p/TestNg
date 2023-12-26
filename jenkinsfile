@@ -11,7 +11,7 @@ pipeline {
 		stage('Compile stage') {
 			steps {
 				echo '--------------:: This is a compile stage :: ------------'
-				sh 'mvn clean compile'
+				bat 'mvn clean compile'
 			}
 	
 		}
@@ -19,7 +19,7 @@ pipeline {
 		stage('Test stage') {
 			steps {
 				echo '--------------:: This is a compile stage :: ------------'
-				sh 'mvn clean test'
+				bat 'mvn clean test'
 			}
 			post {               
                 // If Maven was able to run the tests, even if some of the test
