@@ -1,28 +1,27 @@
 pipeline {
-	
+
 	agent any
+	
 	triggers {
-	pollSCM('* * * * *')
+		pollSCM('* * * * *')
 	}
-	stages{
-	stage('Verify stage'){
-	steps{
-	echo '-------------:: This  is a verify stage :: -----------'
-	bat 'mvn clean verify'
-	}
-	}
-	stage('Compile stage'){
-	steps{
-	echo '-------------:: This  is a Compile stage :: -----------'
-	bat 'mvn clean Compile'
-	}
-	}
-	stage('Test stage'){
-	steps{
-	echo '-------------:: This  is a verify stage :: -----------'
-	bat 'mvn clean Test'
-	}
-	post {               
+	
+	stages {
+		
+		stage('Compile stage') {
+			steps {
+				echo '--------------:: This is a compile stage :: ------------'
+				bat 'mvn clean compile'
+			}
+	
+		}
+		
+		stage('Test stage') {
+			steps {
+				echo '--------------:: This is a compile stage :: ------------'
+				bat 'mvn clean test'
+			}
+			post {               
                 // If Maven was able to run the tests, even if some of the test
                 // failed, record the test results and archive the jar file.
                 success {
@@ -41,5 +40,5 @@ pipeline {
 		}
 		
 	}
-	
-	}
+
+}
