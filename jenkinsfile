@@ -7,19 +7,19 @@ pipeline {
 	stages{
 	stage('Verify stage'){
 	steps{
-	echo '-------------:: This  is a verify stage :: -----------")
+	echo '-------------:: This  is a verify stage :: -----------'
 	bat 'mvn clean verify'
 	}
 	}
 	stage('Compile stage'){
 	steps{
-	echo '-------------:: This  is a Compile stage :: -----------")
+	echo '-------------:: This  is a Compile stage :: -----------'
 	bat 'mvn clean Compile'
 	}
 	}
 	stage('Test stage'){
 	steps{
-	echo '-------------:: This  is a verify stage :: -----------")
+	echo '-------------:: This  is a verify stage :: -----------'
 	bat 'mvn clean Test'
 	}
 	post {               
