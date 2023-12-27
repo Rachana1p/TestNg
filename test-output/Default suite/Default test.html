@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/1/5</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 26 18:40:11 IST 2023</td>
+<td>Started on:</td><td>Wed Dec 27 09:42:15 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11175 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11233 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -117,8 +117,8 @@ Driver info: driver.version: ChromeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace35984028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace35984028'><pre>org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at drivers/windows/chromedriver.exe, but invalid
+</pre></div><a href='#' onClick='toggleBox("stack-trace1463355115", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1463355115'><pre>org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at drivers/windows/chromedriver.exe, but invalid
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
@@ -173,12 +173,7 @@ Driver info: driver.version: ChromeDriver
 <tr>
 <td title='group.BrowserBasedGroupTest.launchFireFoxTest()'><b>launchFireFoxTest</b><br>Test class: group.BrowserBasedGroupTest</td>
 <td></td>
-<td>5</td>
-<td>group.BrowserBasedGroupTest@659499f1</td></tr>
-<tr>
-<td title='group.BrowserBasedGroupTest.testFaceBookHomePage()'><b>testFaceBookHomePage</b><br>Test class: group.BrowserBasedGroupTest</td>
-<td></td>
-<td>0</td>
+<td>6</td>
 <td>group.BrowserBasedGroupTest@659499f1</td></tr>
 <tr>
 <td title='group.BrowserBasedGroupTest.closeFireFox()'><b>closeFireFox</b><br>Test class: group.BrowserBasedGroupTest</td>
@@ -186,9 +181,14 @@ Driver info: driver.version: ChromeDriver
 <td>1</td>
 <td>group.BrowserBasedGroupTest@659499f1</td></tr>
 <tr>
+<td title='group.BrowserBasedGroupTest.testFaceBookHomePage()'><b>testFaceBookHomePage</b><br>Test class: group.BrowserBasedGroupTest</td>
+<td></td>
+<td>0</td>
+<td>group.BrowserBasedGroupTest@659499f1</td></tr>
+<tr>
 <td title='group.BrowserBasedGroupTest.testFailureLogin()'><b>testFailureLogin</b><br>Test class: group.BrowserBasedGroupTest</td>
 <td></td>
-<td>4</td>
+<td>2</td>
 <td>group.BrowserBasedGroupTest@659499f1</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -200,54 +200,8 @@ Driver info: driver.version: ChromeDriver
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='group.BrowserBasedGroupTest.closeChrome()'><b>closeChrome</b><br>Test class: group.BrowserBasedGroupTest</td>
-<td><div><pre>java.lang.Throwable: Method BrowserBasedGroupTest.closeChrome()[pri:0, instance:group.BrowserBasedGroupTest@659499f1] depends on not successfully finished methods in group &quot;ChromeOnly&quot;
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1128158063", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1128158063'><pre>java.lang.Throwable: Method BrowserBasedGroupTest.closeChrome()[pri:0, instance:group.BrowserBasedGroupTest@659499f1] depends on not successfully finished methods in group &quot;ChromeOnly&quot;
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>group.BrowserBasedGroupTest@659499f1</td></tr>
-<tr>
-<td title='group.BrowserBasedGroupTest.testAmazonHomePageTitle2()'><b>testAmazonHomePageTitle2</b><br>Test class: group.BrowserBasedGroupTest<br>Test method: Test Amazon Home Page Title Invalid Match</td>
-<td><div><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testAmazonHomePageTitle2() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
+<td title='group.BrowserBasedGroupTest.testHomePageTitle()'><b>testHomePageTitle</b><br>Test class: group.BrowserBasedGroupTest<br>Test method: Test Amazon Home Page Title Match</td>
+<td><div><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testHomePageTitle() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
 [group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@659499f1]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -268,56 +222,8 @@ Driver info: driver.version: ChromeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2062667107", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2062667107'><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testAmazonHomePageTitle2() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
-[group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@659499f1]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>group.BrowserBasedGroupTest@659499f1</td></tr>
-<tr>
-<td title='group.BrowserBasedGroupTest.testSearch1()'><b>testSearch1</b><br>Test class: group.BrowserBasedGroupTest<br>Test method: Search Iphone 15 pro max</td>
-<td><div><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testSearch1() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
-[group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@659499f1]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1009218257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1009218257'><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testSearch1() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
+</pre></div><a href='#' onClick='toggleBox("stack-trace972843820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace972843820'><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testHomePageTitle() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
 [group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@659499f1]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -364,8 +270,8 @@ Driver info: driver.version: ChromeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace32496853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace32496853'><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testHomePageSourceUrl() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
+</pre></div><a href='#' onClick='toggleBox("stack-trace1713546896", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1713546896'><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testHomePageSourceUrl() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
 [group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@659499f1]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -390,8 +296,8 @@ Driver info: driver.version: ChromeDriver
 <td>0</td>
 <td>group.BrowserBasedGroupTest@659499f1</td></tr>
 <tr>
-<td title='group.BrowserBasedGroupTest.testHomePageTitle()'><b>testHomePageTitle</b><br>Test class: group.BrowserBasedGroupTest<br>Test method: Test Amazon Home Page Title Match</td>
-<td><div><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testHomePageTitle() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
+<td title='group.BrowserBasedGroupTest.testSearch1()'><b>testSearch1</b><br>Test class: group.BrowserBasedGroupTest<br>Test method: Search Iphone 15 pro max</td>
+<td><div><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testSearch1() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
 [group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@659499f1]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -412,8 +318,102 @@ Driver info: driver.version: ChromeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1791267914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1791267914'><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testHomePageTitle() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
+</pre></div><a href='#' onClick='toggleBox("stack-trace843686350", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace843686350'><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testSearch1() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
+[group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@659499f1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>group.BrowserBasedGroupTest@659499f1</td></tr>
+<tr>
+<td title='group.BrowserBasedGroupTest.closeChrome()'><b>closeChrome</b><br>Test class: group.BrowserBasedGroupTest</td>
+<td><div><pre>java.lang.Throwable: Method BrowserBasedGroupTest.closeChrome()[pri:0, instance:group.BrowserBasedGroupTest@659499f1] depends on not successfully finished methods in group &quot;ChromeOnly&quot;
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace793319856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace793319856'><pre>java.lang.Throwable: Method BrowserBasedGroupTest.closeChrome()[pri:0, instance:group.BrowserBasedGroupTest@659499f1] depends on not successfully finished methods in group &quot;ChromeOnly&quot;
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>group.BrowserBasedGroupTest@659499f1</td></tr>
+<tr>
+<td title='group.BrowserBasedGroupTest.testAmazonHomePageTitle2()'><b>testAmazonHomePageTitle2</b><br>Test class: group.BrowserBasedGroupTest<br>Test method: Test Amazon Home Page Title Invalid Match</td>
+<td><div><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testAmazonHomePageTitle2() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
+[group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@659499f1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1232433403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1232433403'><pre>java.lang.Throwable: Method group.BrowserBasedGroupTest.testAmazonHomePageTitle2() on instance group.BrowserBasedGroupTest@659499f1 depends on not successfully finished methods 
 [group.BrowserBasedGroupTest.launchChrome() on instance group.BrowserBasedGroupTest@659499f1]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
